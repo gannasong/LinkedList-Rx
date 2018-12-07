@@ -13,6 +13,8 @@
 		496D409F2105AF6F00D0F85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496D409E2105AF6F00D0F85C /* Assets.xcassets */; };
 		496D40A22105AF6F00D0F85C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496D40A02105AF6F00D0F85C /* LaunchScreen.storyboard */; };
 		496D40AD2105AF6F00D0F85C /* LinkedList_RxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496D40AC2105AF6F00D0F85C /* LinkedList_RxTests.swift */; };
+		496D40B92105B14900D0F85C /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496D40B82105B14900D0F85C /* ListNode.swift */; };
+		496D40BB2105B16F00D0F85C /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496D40BA2105B16F00D0F85C /* LinkedList.swift */; };
 		E4F1EEC5404E5AE92A306C08 /* Pods_LinkedList_Rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C454C0DF9C03AF4385EE8CD /* Pods_LinkedList_Rx.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		496D40A82105AF6F00D0F85C /* LinkedList+RxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LinkedList+RxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		496D40AC2105AF6F00D0F85C /* LinkedList_RxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList_RxTests.swift; sourceTree = "<group>"; };
 		496D40AE2105AF6F00D0F85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		496D40B82105B14900D0F85C /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
+		496D40BA2105B16F00D0F85C /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		567A32E9CD6BC5CB39F4C9F4 /* Pods-LinkedList+Rx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedList+Rx.release.xcconfig"; path = "Pods/Target Support Files/Pods-LinkedList+Rx/Pods-LinkedList+Rx.release.xcconfig"; sourceTree = "<group>"; };
 		6A8EAB05C75661806A24F44F /* Pods-LinkedList+RxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedList+RxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LinkedList+RxTests/Pods-LinkedList+RxTests.release.xcconfig"; sourceTree = "<group>"; };
 		897CBB98D8C6B1F493D7DF7E /* Pods-LinkedList+RxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedList+RxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LinkedList+RxTests/Pods-LinkedList+RxTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 		496D40962105AF6E00D0F85C /* LinkedList+Rx */ = {
 			isa = PBXGroup;
 			children = (
+				496D40B72105B12A00D0F85C /* LinkedList */,
 				496D40972105AF6E00D0F85C /* AppDelegate.swift */,
 				496D40992105AF6E00D0F85C /* ViewController.swift */,
 				496D409E2105AF6F00D0F85C /* Assets.xcassets */,
@@ -112,6 +117,16 @@
 				496D40AE2105AF6F00D0F85C /* Info.plist */,
 			);
 			path = "LinkedList+RxTests";
+			sourceTree = "<group>";
+		};
+		496D40B72105B12A00D0F85C /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				496D40B82105B14900D0F85C /* ListNode.swift */,
+				496D40BA2105B16F00D0F85C /* LinkedList.swift */,
+			);
+			name = LinkedList;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		F3BCC80F1B6A477950176A9E /* Pods */ = {
@@ -293,6 +308,8 @@
 			files = (
 				496D409A2105AF6E00D0F85C /* ViewController.swift in Sources */,
 				496D40982105AF6E00D0F85C /* AppDelegate.swift in Sources */,
+				496D40BB2105B16F00D0F85C /* LinkedList.swift in Sources */,
+				496D40B92105B14900D0F85C /* ListNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

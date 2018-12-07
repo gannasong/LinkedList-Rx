@@ -7,12 +7,27 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import NSObject_Rx
+import RxSwiftExt
 
 class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+
+    let lists = LinkedList<String>()
+    lists.countVariable
+      .ignoreWhen{ $0 == 0 }
+      .subscribe(onNext: { (count) in
+      print("lists count change to \(count)。")
+    }).disposed(by: rx.disposeBag)
+
+    lists.append("First")
+    lists.append("Second")
+    lists.removeLast()
+    lists.removeLast()
   }
 
   override func didReceiveMemoryWarning() {
